@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+  /* Center the video */
+  .video-container {
+    position: absolute;
+    top: 200px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .video-container iframe {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">30 MFF - Escape From Reality</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#photos" class="w3-bar-item w3-button">Photos</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px;position:relative;" id="home">
+    <img src="img/sunset.png" alt="sunset" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      <h1 class="w3-xxlarge w3-text-white"><b>Escape From Reality</b></h1>
+    </div>
+    <div class="video-container">
+      <iframe width="650" height="350" src="https://www.youtube.com/embed/GUcT94xfAuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/archery.jpg" alt="Archery" width="500" height="850">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About</h1><br>
+      <h5 class="w3-center w3-text-grey">The Importance Of Archery To Me</h5>
+      <p class="w3-large">Archery has been my source of escaping reality ever since I started it as a hobby back in 2013. This ancient art of precision and focus has a unique way of grounding me, offering a much-needed respite from the chaos of everyday life. Drawing the bowstring and aiming at the target requires complete concentration, effectively silencing the noise of external worries and thoughts. Each shot, whether it hits the bullseye or not, brings a sense of accomplishment and progress.</p>
+      <p class="w3-large">The rhythmic nature of archery practice creates a meditative state, where time seems to slow down, and the only thing that matters is the alignment of my breath with the release of the arrow. This singular focus helps clear my mind, allowing me to return to daily challenges with a renewed sense of clarity and calm. It's honestly amazing how activities like archery can help one recharge and find clarity amidst the busyness of life. The discipline and patience cultivated through archery also translate into other areas of life, fostering a more balanced and mindful approach to everyday tasks.</p>
+      <p class="w3-large">Furthermore, being in nature, where many archery ranges are set, enhances this experience. The tranquility of the outdoors, combined with the rhythmic practice of shooting arrows, creates a profound sense of peace. It's a reminder of the simplicity and beauty that can be found in moments of stillness and focused effort. Archery is not just a sport or a hobby; for me, it's a sanctuary where I can retreat, reflect, and rejuvenate.</p>
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>If you have any further question please, do not hesitate to contact me.</p>
+    <p class="w3-text-blue-grey w3-large"><b>You can contact me by:</b></p>
+    <p class="w3-text-black">Phone: 0554554445</p>
+    <p class="w3-text-black">Email: sa6607@nyu.edu</p>
+    <p class="w3-text-black">Or feel free to send a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea class="w3-input w3-padding-16" placeholder="Message" required name="Message"></textarea></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+</div>
+
+</body>
+</html>
+
